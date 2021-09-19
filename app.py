@@ -31,6 +31,4 @@ num = 0
 
 while num < 15:
     print(num)
-    if num == 8:
-        continue
     num += 1
