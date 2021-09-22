@@ -29,6 +29,7 @@ users.append("nowy")
 
 num = 0
 
-while num < 15:
-    print(num)
-    num += 1
+# while num < 15:
+#     print(num)
+#     num += 1
+
