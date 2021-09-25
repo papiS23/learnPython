@@ -17,13 +17,22 @@
 #     print("Niepoprawne działanie")
 some_numbers = [1, 3, 5, 7, 9, 0]
 friends = ['marysia', 'dominik', 'pawel', 'blazej', 'wojtek', 'michal']
-friends.extend(some_numbers)
-# print(friends)
-reverse_table = []
-for num in some_numbers:
-    reverse_table.insert(0, num)
+friends.sort()
 
-print(reverse_table)
+best_friends = ('marysia', 'dominik')
+
+def first_function(x):
+    print(x)
+
+first_function("siemanko")
+
+# friends.extend(some_numbers)
+# # print(friends)
+# reverse_table = []
+# for num in some_numbers:
+#     reverse_table.insert(0, num)
+#
+# print(reverse_table)
 # for i in range(6):
 #     some_numbers[i] = some_numbers[i] + 1
 # print(some_numbers)
