@@ -25,8 +25,8 @@ def dlugoscSlowa(slowo):
     return len(slowo)
 
 def czyPalindrom(slowo):
-    for k in range(len(slowo)):
-        if slowo[k] != slowo[-(k+1)]:
+    for k in range(len(slowo)): #petla od 0 do ilosci liter danego slowa
+        if slowo[k] != slowo[-(k+1)]: #porownanie litery pierwszej do ostatniej (jezeli k wynosi 0 to -(k+1) wynosi -1, jezeli 1 to -2 itd)
             return False
     return True
 
@@ -39,7 +39,7 @@ for num in line1_numbers:       # jak by w zadaniu bylo wypisac ilosc liczb pier
 print() # przejscie do nastepnej lini
 
 # Zadanie ze sprawdzeniem dlugosci slowa
-print(f"Dlugosc slowa {line_rest[0]} wynosi: {dlugoscSlowa(line_rest[0])}")
+print(f"Dlugosc slowa {line_rest[0]} wynosi: {dlugoscSlowa(line_rest[0])}") #uzycie f przed "" pozwala na uzywanie kodu pythona w {} pomiedzy slowami
 
 # Zadanie z palindromami
 for word in line_rest:
