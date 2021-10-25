@@ -25,11 +25,10 @@ def dlugoscSlowa(slowo):
     return len(slowo)
 
 def czyPalindrom(slowo):
-    for k in range(len(slowo)): #petla od 0 do ilosci liter danego slowa
-        if slowo[k] != slowo[-(k+1)]: #porownanie litery pierwszej do ostatniej (jezeli k wynosi 0 to -(k+1) wynosi -1, jezeli 1 to -2 itd)
-            return False
-    return True
-
+    if slowo == slowo[::-1]:
+        return True
+    else:
+        return False
 
 # Zadanie z liczbami pierwszymi
 print('Liczby pierwsze:', end=" ")
