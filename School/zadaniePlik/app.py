@@ -27,8 +27,10 @@ for line in file:
                 zadanie5.append(current_line[sign])
         else:
             zadanie2.append(int(current_line[sign]))
-            if int(current_line[sign]) < num1:
-                zadanie4.append(current_line[sign])
+
+    for item in range(1, len(current_line)):
+        if current_line[item].isdigit() and int(current_line[item]) < num1:
+            zadanie4.append(current_line[item])
 
 print(f"Zadanie 1: {', '.join(zadanie1)}")
 print(f"Zadanie 2: {max(zadanie2)}, {min(zadanie2)}")
