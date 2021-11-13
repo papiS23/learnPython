@@ -1,6 +1,13 @@
 import requests
 import json
+import mysql.connector
 
-response = requests.get("https://api.stackexchange.com/2.3/questions?order=desc&sort=activity&site=stackoverflow")
+connection = mysql.connector.connect(host='localhost',database="lotnisko", user='root', password='')
+mycursor = connection.cursor()
 
-print(response.json())
+mycursor.execute("select * from samoloty")
+samoloty = []
+for samolot in mycursor:
+    samoloty.append(samolot)
+
+print(samoloty[0])
