@@ -1,2 +1,6 @@
 **/venv
 REST API Tech With Tim/.idea/misc.xml
+*.xml
+*.xml
+*.iml
+.DS_Store
