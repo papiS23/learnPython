@@ -6,8 +6,8 @@ def longest_slide_down(pyramid):
         beforeIndex = pyr.index(max(pyr[beforeIndex:beforeIndex+2]))
     return result
 
-##TODO: create an algorithm that checks if we choose diffrent num in earlier step of pyramid we can now have bigger sum
-
+##TODO: sprawdzenie czy w danym wierszu piramidy jest wieksza liczba niz ta ktora dodajemy
+## jezeli jest: spradzenie czy suma z ta liczba nie wychodzi wieksza
 print(longest_slide_down([
             [75],
             [95, 64],
