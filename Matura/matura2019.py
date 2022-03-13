@@ -1,4 +1,6 @@
-plik = open('przyklad.txt', 'r')
+import math
+
+plik = open('sygnaly.txt', 'r')
 plikCopia = []
 for linia in plik:
     plikCopia.append(linia.strip())
@@ -28,3 +30,15 @@ for linia in plikCopia:
         slowa.append(linia)
 
 print(slowa, dlugosc)
+
+slowa2 = []
+for linia in plikCopia:
+    maxodleglosc = 0
+    for i in range(len(linia)-1):
+        odleglosc = math.fabs(ord(linia[i])-ord(linia[i+1]))
+        if odleglosc > maxodleglosc:
+            maxodleglosc = odleglosc
+    if maxodleglosc <= 10:
+        slowa2.append(linia)
+
+print(slowa2)
