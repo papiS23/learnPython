@@ -52,7 +52,7 @@ def findMinMax(list):
 
     end = round(time.time(), 5)
     complexity = end - start
-    return min, max, list, complexity
+    return min, max, list, round(complexity, 8)
 
 print("Najwieksza i najmniejsza liczba z listy:", findMinMax(randomIntList(10)))
 
@@ -72,9 +72,9 @@ def bubbleSort(list):
     end = round(time.time(), 5)
     complexity = end - start
 
-    return list, complexity
+    return round(complexity, 8)
 
-print("Sortowanie babelkowe:",bubbleSort(randomIntList(30)))
+print("Sortowanie babelkowe:",bubbleSort(randomIntList(8000)))
 
 
 def insertSort(list):
@@ -92,7 +92,7 @@ def insertSort(list):
     end = round(time.time(), 5)
     complexity = end - start
 
-    return list, complexity
+    return list, round(complexity, 8)
 
 print("Sortowanie przez wstawianie:",insertSort(randomIntList(30)))
 
